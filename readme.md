@@ -51,3 +51,6 @@ You can use what ever method works best for you to deploy this code to your site
 2. All pages that could be landing pages need to have the Javascript code found in the `utm-capture.js` file.
 3. The contact form page also needs to have the Javascript code contained in the `utm2form.js` file.
 	1. The `getElementById` values in this code need to match the hidden form field IDs in the contact form.
+
+  ## Local testing
+  In order for this to work, these pages will need to be served up by some sort of web server. You can open the files in VS Code, then use the [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) plug in.
