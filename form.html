@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Second page to verify cookies persisting</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+  <main class="container mt-5">
+    <h1>Sample contact form page</h1>
+    <p>even if this is not the original landing page, it should still populate the form fields with the UTM values</p>
+
+    <ul>
+      <li> <a href="form.html">View the form page</a></li>
+      <li><a href="index.html">View the home page</a></li>
+    </ul>
+
+    <form action="#" method="post">
+      <p>source <br>
+      <input name="utm_source" id="input_3_1" type="text" value=""> </p>
+      <p>medium <br>
+      <input name="utm_medium" id="input_3_5" type="text" value=""> </p>
+      <p>campaign <br>
+      <input name="utm_campaign" id="input_3_6" type="text" value=""> </p>
+  
+    </form>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
+  <script src="utm-capture.js"></script>
+  <script src="utm2form.js"></script>
+</body>
+</html>
