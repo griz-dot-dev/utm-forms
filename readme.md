@@ -54,3 +54,24 @@ You can use what ever method works best for you to deploy this code to your site
 
   ## Local testing
   In order for this to work, these pages will need to be served up by some sort of web server. You can open the files in VS Code, then use the [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) plug in.
+
+  ## Setting a cookie expiration date
+
+  to set an expiration date in days, you add `, { expires: 7 }` to the end of the "Cookies.set" command, per the example below. Please note, you need to do this for all 3 instances. In this example, the cookie will expire after 7 days. 
+
+  ```
+    if(Cookies.get('utm_source') == null || Cookies.get('utm_source') == "") {
+        Cookies.set('utm_source', source, { expires: 7 });
+        };
+    if(Cookies.get('utm_medium') == null || Cookies.get('utm_medium') == "") {
+        Cookies.set('utm_medium', medium, { expires: 7 });
+        };
+    if(Cookies.get('utm_campaign') == null || Cookies.get('utm_campaign') == "") {
+        Cookies.set('utm_campaign', campaign, { expires: 7 });
+        };
+  ```
+
+  ### How to test cookie expiration
+
+  Check the cookie expiration date in your browser's developer tools. Here's an example from Firefox:
+  [Firefox screenshot](https://res.cloudinary.com/usa2pt/image/upload/v1680167841/fileShare/cookieExpires_gwdqon.jpg)

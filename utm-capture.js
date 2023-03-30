@@ -11,11 +11,11 @@
   var campaign = getParameterByName('utm_campaign');
   // set cookie values
   if(Cookies.get('utm_source') == null || Cookies.get('utm_source') == "") {
-    Cookies.set('utm_source', source);
+    Cookies.set('utm_source', source, { expires: 7 });
     };
 if(Cookies.get('utm_medium') == null || Cookies.get('utm_medium') == "") {
-    Cookies.set('utm_medium', medium);
+    Cookies.set('utm_medium', medium, { expires: 7 });
     };
 if(Cookies.get('utm_campaign') == null || Cookies.get('utm_campaign') == "") {
-    Cookies.set('utm_campaign', campaign);
+    Cookies.set('utm_campaign', campaign, { expires: 7 });
     };
